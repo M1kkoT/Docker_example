@@ -16,8 +16,6 @@ COPY . .
 
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
-ENV REACT_APP_BACKEND_URL=http://localhost:8080
-
 RUN npm update && npm run build
 
 RUN npm install -g serve
